@@ -9,7 +9,7 @@ $('.owl-carousel').owlCarousel({
         600:{ //se tiver 600px pra mais vão aparecer 3 posters
             items:3
         },
-        1000:{ //quando a tela tiver 100px, fica até 5 posters
+        1000:{ //quando a tela estiver em 100px, vão aparecer 5 posters
             items:5
         }
     }

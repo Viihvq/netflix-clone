@@ -13,12 +13,12 @@
 
 body{
     background: var(--preta);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Arial', Times, serif;
     color: white;
 }
 
 header .container{
-    border: 1px solid rgb(231, 128, 128);
+  /*  border: 1px solid rgb(231, 128, 128);*/
     display: flex; 
     flex-direction: row;/* é o padrão do display:flex, joga tudo como linha*/
     align-items: center;
@@ -35,7 +35,7 @@ header .logo{
 header nav a{
     text-decoration: none;
     color: #AAA;
-    margin-right: 10px;
+    margin-right: 35px;
 }
 
 header nav a:hover{ /*hover: evento quando o mouse está por cima*/
@@ -46,10 +46,10 @@ header nav a:hover{ /*hover: evento quando o mouse está por cima*/
 
 .filme-principal{
     font-size: 16px;
-    background: linear-gradient(rgba(0, 0, 0,.50), rgba(0, 0, 0,.50)100%), url('/img/capa-house.jpg');
+    background: linear-gradient(rgba(0, 0, 0,.50), rgba(0, 0, 0,.50)100%), url('../img/capa-house.jpg');
     /*Gradiente:cria uma camada fina em cima da imagem com uma tonalidade. Pede sempre duas cores*/
-    height: 400px;
-    background-size: cover; /*Para ficar no tamanho da caixa*/
+    height: 425px;
+    background-size: cover; /*Para ficar no tamanho da caixa, "cobrir" */
 
     display: flex; /*Apenas as filhas diretas da classe recebem essa modificação*/
     flex-direction: column; /*Justify-content sempre segue a direção do flex-direction*/
@@ -72,7 +72,7 @@ header nav a:hover{ /*hover: evento quando o mouse está por cima*/
     border: none;
     color: white;
 
-    padding: 15px 30px;
+    padding: 13px 30px;
     margin-right: 15px;
     font-size: 12px;
 
@@ -94,11 +94,19 @@ header nav a:hover{ /*hover: evento quando o mouse está por cima*/
 }
 
 .filme-principal .container{ /*container da classe principal*/
-    width: 70%;
+    width: 55%;
 }
 
 .box-filme{
     height: 100%;
     width: 100%;
     display: block;
+}
+
+.carrossel-filmes{
+    margin-top: 8px;
+}
+
+.item{
+    cursor: pointer;
 }
