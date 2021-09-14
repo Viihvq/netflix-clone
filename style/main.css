@@ -19,6 +19,10 @@ body{
 
 header .container{
   /*  border: 1px solid rgb(231, 128, 128);*/
+    position: fixed;
+    width: 100vw;
+    background-color: #141414;
+    margin-left: 0;
     display: flex; 
     flex-direction: row;/* é o padrão do display:flex, joga tudo como linha*/
     align-items: center;
@@ -26,7 +30,7 @@ header .container{
 }
 
 header .logo{
-    margin-left: 5px;
+    margin-left: 20px;
     color: var(--vermelho);
     font-family: 'Arial Black', Times;
     font-size: 40px;
@@ -48,7 +52,7 @@ header nav a:hover{ /*hover: evento quando o mouse está por cima*/
     font-size: 16px;
     background: linear-gradient(rgba(0, 0, 0,.50), rgba(0, 0, 0,.50)100%), url('../img/capa-house.jpg');
     /*Gradiente:cria uma camada fina em cima da imagem com uma tonalidade. Pede sempre duas cores*/
-    height: 425px;
+    height: 600px;
     background-size: cover; /*Para ficar no tamanho da caixa, "cobrir" */
 
     display: flex; /*Apenas as filhas diretas da classe recebem essa modificação*/
